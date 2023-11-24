@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Smartphone Interface</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Smartphone Interface</h1>
+      <div class="user-container">
+        <h2>User 1</h2>
+        <button onclick="ricarica(1)">Ricarica</button>
+        <button onclick="effettuaChiamata(1, 5)">Effettua Chiamata (5 min)</button>
+        <p>Saldo Residuo: <span id="saldo-1"></span></p>
+        <p>Numero di Chiamate Effettuate: <span id="num-chiamate-1"></span></p>
+      </div>
+
+      <!-- Aggiungi contenitori simili per User 2 e User 3 se necessario -->
+    </div>
+
+    <script src="cell.js"></script>
+  </body>
+</html>

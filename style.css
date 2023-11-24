@@ -1,0 +1,107 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 20px;
+  background-color: #ef4040;
+}
+
+#app {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.user-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  color: #e60000;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+span {
+  font-weight: bold;
+  color: #e60000;
+}
+/* Aggiornamento degli stili degli alert */
+@keyframes showAlert {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: showAlert 0.3s ease-in-out;
+}
+
+.alert.error {
+  border: 2px solid #e60000;
+}
+
+.alert.success {
+  border: 2px solid #4caf50;
+}
+
+.alert h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.alert p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.alert button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.alert button:hover {
+  background-color: #cc0000;
+}
